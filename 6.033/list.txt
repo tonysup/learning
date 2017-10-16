@@ -1,3 +1,10 @@
+课程列表：
+LEC01 Coping with Complexity: Enforced Modularity via Client/server Organization
+LEC02 Naming(无)
+LEC03 Virtual memory
+
+
+
 
 1. UNIX论文
 2. 理解不同命名的使用
