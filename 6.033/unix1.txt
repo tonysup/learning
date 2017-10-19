@@ -1,0 +1,29 @@
+1.differences between ordinary files, directories, and special files
+
+ordinary file:普通文件，包括文本，二进制以及一些常用格式的文件等。
+directories:目录
+special files:比如device IO。 UNIX一个比较大的特性，很多东西抽象成文件，主要是一些设备。跟普通文件一样使用。
+
+2.you should be able to explain what happens when a user opens a file
+filename映射为i-number，内核组织文件的内核一系列的数据结构，返回一个索引，后面的read/write操作都是基于该索引的操作。
+
+What things in UNIX are named?
+目录+文件名的方式，层级结构，以/分隔。
+
+How does naming in UNIX compare to naming in DNS? How do layering and hierarchy apply (if at all)?
+unix目录以/分隔，从前到后依次。
+dns 域名以.分隔 从后到前，依次查找。
+
+What is UNIX?
+交互式的系统，需要硬件要求比较低，使用成本较低。
+该系统集成一些比较常用的工具，比如编辑器，编译器，连接器等等。比较占用空间和内存较小。
+该系统主要是用C语言开发，很小一部分汇编，代码比较精简。逻辑清晰。
+提供了比较先进的文件系统等等。
+
+How is its filesystem designed?
+(1)设备IO当成普通文件处理
+(2)i-number i-list的内核结构，无论是实现还是使用比较方便。
+
+Why was it designed to work that way?
+(1)统一普通文件，目录和IO设备，一致的api。
+(2)i-node i-list，主要为了提高处理效率。
