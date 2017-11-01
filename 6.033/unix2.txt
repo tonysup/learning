@@ -1,1 +1,18 @@
+If you want to test your understanding of UNIX further, check out Question 7
 
+What 6.033 concepts are exemplified by UNIX?
+1.使用比较广泛，并且开源。
+2.为程序员而开发的
+3.KISS
+etc
+
+What design principles, or objectives, do you think the authors were following as they developed UNIX?
+KISS
+慢慢理解UNIX哲学
+
+What does the UNIX shell do?
+入口，执行命令和程序
+How does it work?
+fork wait 等
+Why is it useful?
+交互式的比较方便，可以用shell脚本批量处理 等等
