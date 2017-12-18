@@ -1,0 +1,18 @@
+容错性：通过备份提供可靠性
+
+设计容错性系统的通用性方法
+(1)识别可能的错误
+(2)分析和容纳
+(3)处理这种错误
+
+可靠性的度量
+Metrics:
+ MTTF = mean time to failure （平均时间）
+ MTTR = mean time to repair
+ MTBF = mean time between failures (MTTF + MTTR)
+ availability = MTTF / MTBF
+ 
+通过备份(冗余)提供可靠性
+
+以处理硬盘的错误为例，介绍容错性
+RAID1-RAID4-RAID5-RAID6 通过备份，用来恢复
