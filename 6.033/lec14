@@ -12,7 +12,9 @@ Metrics:
  MTBF = mean time between failures (MTTF + MTTR)
  availability = MTTF / MTBF
  
-通过备份(冗余)提供可靠性
+通过冗余提供可靠性
+(1)Temporal redundancy. 时间上的冗余，比如，临时的错误，网络码流信息传递过程中的包丢失
+(2)Spatial redundancy. 空间上的冗余，比如，持续的错误，从硬盘读取数据。
 
 以处理硬盘的错误为例，介绍容错性
 RAID1-RAID4-RAID5-RAID6 通过备份，用来恢复
