@@ -1,0 +1,16 @@
+容错性:事务简介
+
+(从上节可靠性开始，感觉进入该门课程的精华，但是英文原版的书确实看起来费劲，很多不理解的地方，现在先过一遍，平时根据具体的组件，再慢慢理解吧)
+
+原子性
+(1)all or nothing
+(2)before or after
+
+原子性，也是模块化的一种方式
+
+原子性的实现：
+(1)把原子性的阶段分开，分为Pre-Commit/Commit Ponit/Post-Commit
+(2)shadow copies 
+(3)Making rename atomic 系统层面的某些调用，也必须得是原子性的
+ 
+Golden rule: never modify the only copy
