@@ -1,0 +1,3 @@
+1.redis benchmark,increase block size and thread num,the net card of server side can’t increase the same ratio.
+2.why the hashmap loader factor is 0.75.
+3.reflection in java and other language.
